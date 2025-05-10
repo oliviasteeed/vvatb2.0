@@ -145,7 +145,7 @@ body {
 
 .about-caption-text{
   position:relative;
-  top:250px;
+  top:220px;
   left:0;
   text-align:center;
   color: var(--white);
@@ -156,7 +156,7 @@ body {
     height: 500px;
     display: flex;
     flex-direction:column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     overflow: hidden;
     flex:1;
@@ -170,6 +170,7 @@ body {
     height: auto;
     width: auto;
     display: block;
+    align-self:center;
 }
 
 /* FOOTER */
