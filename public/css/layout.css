@@ -13,20 +13,23 @@ body {
   flex-direction: column;
   align-items: center;
   /* justify-content: center; */
-  border: 1px solid red;
+  /* border: 1px solid red; */
   /* min-height: 100%; */
 }
 
 /* NAVBAR */
+.top-z{
+    z-index: 100;
+}
+
 .outer-nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   position: sticky;
   top: 0;
-  z-index: 100;
 }
 
 .inner-nav{
@@ -35,7 +38,7 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
-  border: 1px solid orange;
+  /* border: 1px solid orange; */
 }
 
 .text-icon-button-box {
@@ -44,7 +47,7 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 0.25rem;
-  border: 1px solid green;
+  /* border: 1px solid green; */
   background-color: var(--white);
   cursor: pointer;
 }
@@ -72,7 +75,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid cyan;
+  /* border: 1px solid cyan; */
   width: 100%;
   height: 85vh;
 }
@@ -82,7 +85,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 90vw;
   max-height: 90vh;
 }
@@ -93,7 +96,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  border: 1px solid orange;
+  /* border: 1px solid orange; */
   width: 100%;
 }
 
@@ -108,20 +111,21 @@ body {
   margin-top:5rem;
   display: flex;
   flex-direction: column;
-  border: 1px solid orange;
+  /* border: 1px solid orange; */
   width: 80vw;
-  gap:4rem;
+  /* gap:4rem; */
 }
 
 .outer-about-container{
   display: flex;
   flex-direction: row;
-  border: 1px solid pink;
-  gap:1rem;
+  align-items: flex-start;
+  /* border: 1px solid pink; */
+  gap:2rem;
 }
 
 .about-container{
-  border:1px red solid;
+  /* border:1px red solid; */
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -136,7 +140,15 @@ body {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  border: 1px solid purple;
+  /* border: 1px solid purple; */
+}
+
+.about-caption-text{
+  position:relative;
+  top:250px;
+  left:0;
+  text-align:center;
+  color: var(--white);
 }
 
 .flipbook {
@@ -148,7 +160,7 @@ body {
     align-items: center;
     overflow: hidden;
     flex:1;
-    border: 1px solid cyan;
+    /* border: 1px solid cyan; */
     /* justify-content: space-between; */
 }
 
@@ -166,7 +178,9 @@ footer{
   flex-direction: column;
   align-self: center;
   gap: 1rem;
-  border: 1px solid green;
+  /* border: 1px solid green; */
+  margin-top:4rem;
+  margin-bottom:1rem;
 }
 
 /* MEET THE ALBUMS */
@@ -174,30 +188,45 @@ footer{
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  border: 1px solid orange;
+  /* border: 1px solid orange; */
 }
 
 /* ////////// ALBUMS PAGE ////////// */
 
 .outer-album-content-container {
-  margin-top:1rem;
+  margin-top:3rem;
   display: flex;
   flex-direction: column;
-  border: 1px solid cyan;
-  width: 100%;
+  /* border: 1px solid cyan; */
+  width: 80vw;
+  gap:4rem;
   min-height: 100vh;
+  max-width: 1200px;
 }
 
+
 .album-start-container{
-  border:1px red solid;
+  /* border:1px red solid; */
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  flex:2;
+  flex:1;
+  padding-right:2rem;
 }
 
 .album-flipbook-container{
-  width: 33%;
+  width: 45%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  /* border: 1px solid purple; */
+}
+
+/* .outer-flipbook-container{
+  width: 100%;
   height: 500px;
   display: flex;
   flex-direction: column;
@@ -205,21 +234,34 @@ footer{
   align-items: center;
   gap: 1rem;
   border: 1px solid purple;
-}
+} */
 
 /* lyrics part */
 .lyrics-box{
   display:flex;
   flex-direction:row;
   flex-wrap:wrap;
-  border:1px solid fuchsia;
+  /* border:1px solid navy; */
+  gap: 1rem;
+  margin-bottom:2rem;
+  justify-content:center;
 }
 
 .song-box{
   display:flex;
   flex-direction:column;
   gap:1.5rem;
-  border:1px solid fuchsia;
-  min-width: 20vw;
+  /* border:1px solid fuchsia; */
   flex:1;
+  min-width: 275px;
+  max-width: 300px;
 }
+
+.album-caption-text{
+  position:relative;
+  top:250px;
+  left:0;
+  text-align:center;
+  color: var(--white);
+}
+

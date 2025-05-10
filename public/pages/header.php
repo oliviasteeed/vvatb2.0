@@ -28,6 +28,9 @@
     <!-- album cover flip -->
     <script src="../../private/js/album-cover.js" type="text/javascript"></script>
 
+    <!-- caption text -->
+    <script src="../../private/js/hover-caption.js" type="text/javascript"></script>
+
 
 
   </head>
@@ -37,10 +40,10 @@
   <!-- pasted from home.php where developed -->
 <div class='outer-container'>
 
-<div class='outer-nav'>
+<div class='outer-nav top-z'>
 
 
-        <div class='text-icon-button-box'>
+        <div class='text-icon-button-box' onclick="window.location.href='home.php'">
           <?php
             $currentFile = basename($_SERVER['REQUEST_URI']); 
             if ($currentFile != 'home.php') {
