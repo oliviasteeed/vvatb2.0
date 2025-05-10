@@ -1,0 +1,21 @@
+@font-face {
+    font-family: "sohne-bold";
+    font-weight: 600;
+    font-style: normal;
+    src: url("../../private/fonts/sohne_bold.eot");
+    src: url("../../private/fonts/sohne_bold.eot?#iefix") format("embedded-opentype"), 
+    url("../../private/fonts/sohne_bold.woff2") format("woff2"), 
+    url("../../private/fonts/sohne_bold.woff") format("woff"), 
+    url("../../private/fonts/sohne_bold.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "sohne-semibold";
+    font-weight: 400;
+    font-style: normal;
+    src: url("../../private/fonts/sohne_semibold.eot");
+    src: url("../../private/fonts/sohne_semibold.eot?#iefix") format("embedded-opentype"), 
+    url("../../private/fonts/sohne_semibold.woff2") format("woff2"), 
+    url("../../private/fonts/sohne_semibold.woff") format("woff"), 
+    url("../../private/fonts/sohne_semibold.ttf") format("truetype");
+  }

@@ -1,0 +1,224 @@
+
+/* GLOBAL */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background-color: var(--white);
+}
+
+.outer-container {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  border: 1px solid red;
+  /* min-height: 100%; */
+}
+
+/* NAVBAR */
+.outer-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  border: 1px solid blue;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.inner-nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  border: 1px solid orange;
+}
+
+.text-icon-button-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.25rem;
+  border: 1px solid green;
+  background-color: var(--white);
+  cursor: pointer;
+}
+
+.text-icon-button-box img {
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+}
+
+.text-icon-button-box a {
+  font-family: "sohne-bold";
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1rem;
+  /* color: var(--black); */
+}
+
+/* ////////// LANDING PAGE ////////// */
+
+/* ALBUMS/TITLES CONTAINER */
+.outer-content-container {
+  /* margin-top:5rem; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid cyan;
+  width: 100%;
+  height: 85vh;
+}
+
+.inner-content-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+  width: 90vw;
+  max-height: 90vh;
+}
+
+.album-cover-box{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border: 1px solid orange;
+  width: 100%;
+}
+
+.album-cover-img{
+  width:15rem;
+  height:15rem;
+}
+
+/* ABOUT */
+
+.supplementary-content-container{
+  margin-top:5rem;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid orange;
+  width: 80vw;
+  gap:4rem;
+}
+
+.outer-about-container{
+  display: flex;
+  flex-direction: row;
+  border: 1px solid pink;
+  gap:1rem;
+}
+
+.about-container{
+  border:1px red solid;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex:1;
+}
+
+.outer-flipbook-container{
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border: 1px solid purple;
+}
+
+.flipbook {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    flex:1;
+    border: 1px solid cyan;
+    /* justify-content: space-between; */
+}
+
+.flipbook img {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    width: auto;
+    display: block;
+}
+
+/* FOOTER */
+footer{
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  gap: 1rem;
+  border: 1px solid green;
+}
+
+/* MEET THE ALBUMS */
+.album-links{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border: 1px solid orange;
+}
+
+/* ////////// ALBUMS PAGE ////////// */
+
+.outer-album-content-container {
+  margin-top:1rem;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid cyan;
+  width: 100%;
+  height: 100vh;
+}
+
+.album-start-container{
+  border:1px red solid;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex:2;
+}
+
+.album-flipbook-container{
+  width: 33%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border: 1px solid purple;
+}
+
+/* lyrics part */
+.lyrics-box{
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+}
+
+.song-box{
+  display:flex;
+  flex-direction:column;
+  gap:0.5rem;
+  border:1px solid fuchsia;
+  width:100%;
+  flex:1;
+}
