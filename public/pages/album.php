@@ -23,6 +23,8 @@ if ($project == 'itsneverenough') {
     exit();
 }
 
+// print_r($album_info);
+
 
 ?>
 
@@ -32,8 +34,12 @@ if ($project == 'itsneverenough') {
     <div class='outer-about-container'>
 
         <div class='album-start-container'>
-                <h1 class='left-align'>The Next Album</h1>
+                <?php 
+                echo "<h1 class='left-align'>$title</h1>";
+                ?>
                     <h2 class='tna-pink'>a undecided album about transitions and adulthood.</h2>
+
+                    <p>mnore to saymnore to saymnore to saymnore to saymnore to saymnore to saymnore to saymnore to saymnore to saymnore to saymnore to saymnore to saymnore to saymnore to saymnore to saymnore to saymnore to saymnore to saymnore to saymnore to saymnore to saymnore to saymnore to saymnore to say</p>
 
                     <p>written February 2024 to January 2025<br>
                     recorded July 2024 to June 2025<br>
@@ -62,15 +68,19 @@ if ($project == 'itsneverenough') {
 <!-- end of outer album content container  -->
 
 <?php
+echo "<div class='lyrics-box'>";
 
-// foreach ()
-
-
-//     <div class='lyrics-box'>
-//         <div class='song-box'>
-//             <h2>I'm going nowhere</h2>
-//     </div>
-
+foreach ($album_info as $song) {
+    $title = $song['title'];
+    $lyrics = $song['lyrics'];
+    $about = $song['about'];
+    echo "<div class='song-box'>";
+    echo "<h2>$title</h2>";
+    echo "<p>$lyrics</p>";
+    echo "<p class='p-small'>$about</p>";
+    echo "</div>";
+}
+    echo "</div>";
 ?>
 
 

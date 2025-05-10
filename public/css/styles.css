@@ -60,6 +60,10 @@ p{
   color: var(--black);
 }
 
+.p-small{
+    font-size: 0.85rem;
+}
+
 a{
   margin:0;
   padding:0;
