@@ -36,6 +36,15 @@ h1{
   color: var(--black);
 }
 
+@media screen and (max-width: 950px), screen and (max-height: 570px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+  .h1-bracket {
+    font-size: 4rem;
+  }
+}
+
 .h1-album{
   /* font-size: 4rem; */
   text-align: left;

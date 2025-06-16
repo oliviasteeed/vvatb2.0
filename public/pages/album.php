@@ -37,7 +37,7 @@ if ($project == 'itsneverenough') {
 
 <div class='outer-album-content-container'>
 
-    <div class='outer-about-container'>
+    <div class='album-about-container'>
 
         <div class='album-start-container'>
                 <?php 
@@ -49,7 +49,8 @@ if ($project == 'itsneverenough') {
                     "’" => '<span class="a-bracket">’</span>',
                     "‘" => '<span class="a-bracket">‘</span>',
                     ":" => '<span class="a-bracket">:</span>',
-                    "ï" => '<span class="a-bracket">ï</span>'
+                    "ï" => '<span class="a-bracket">ï</span>',
+                    "!" => '<span class="a-bracket">!</span>'
                 ];
 
                 $h2_replacements = [
@@ -123,7 +124,8 @@ $p_replacements = [
     "‘" => '<span class="a-bracket">‘</span>',
     ":" => '<span class="a-bracket">:</span>',
     "ï" => '<span class="a-bracket">ï</span>',
-    "*" => '<span class="a-bracket">*</span>'
+    "*" => '<span class="a-bracket">*</span>',
+    "!" => '<span class="a-bracket">!</span>'
 ];
 
 $h2_replacements = [

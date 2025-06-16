@@ -145,7 +145,7 @@ body {
 
 .about-caption-text{
   position:relative;
-  top:220px;
+  top:50%;
   left:0;
   text-align:center;
   color: var(--white);
@@ -205,6 +205,14 @@ footer{
   max-width: 1200px;
 }
 
+.album-about-container{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  /* border: 1px solid pink; */
+  gap:2rem;
+}
+
 
 .album-start-container{
   /* border:1px red solid; */
@@ -225,6 +233,7 @@ footer{
   gap: 1rem;
   /* border: 1px solid purple; */
 }
+
 
 /* .outer-flipbook-container{
   width: 100%;
@@ -260,9 +269,57 @@ footer{
 
 .album-caption-text{
   position:relative;
-  top:250px;
+  top:50%;
   left:0;
   text-align:center;
   color: var(--white);
 }
 
+
+
+/* caption text to hover on images */
+@media screen and (max-width: 1200px) {
+  .about-caption-text{
+      top:33%;
+  }
+
+    .album-caption-text{
+      top:45%;
+  }
+}
+
+/* caption text to hover on images */
+@media screen and (max-width: 900px) {
+  .about-caption-text{
+      top:33%;
+  }
+
+  .album-caption-text{
+      top:33%;
+  }
+}
+
+/* columns breakpoint */
+@media screen and (max-width: 800px) {
+  .album-about-container{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .album-flipbook-container{
+    width: 100%;
+  }
+
+  .outer-about-container{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-caption-text{
+      top:40%;
+  }
+
+    .album-caption-text{
+      top:50%;
+  }
+}
